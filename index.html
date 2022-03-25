@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>jQuery ODC Lesson</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="groupOf">
+    <p>List of Tasks:</p>
+    <span class="container">
+      <input type="text" id="task_add" />
+      <input type="button" onclick="addTask()" value="Add task" />
+    </span>
+    <span class="container">
+      <input type="text" id="task_srch" />
+      <input type="button" onclick="searchTask()" value="search task" />
+    </span>
+    <span class="container">
+      <input type="text" id="task_del" />
+      <input type="button" onclick="deleteTask()" value="delete task" />
+    </span>
+    <span class="container">
+      <input type="text" id="task_update" />
+      <input type="button" onclick="updateTask()" value="update task" />
+    </span>
+  </div>
+
+
+
+  <div class="groupOfTasks">
+    <div class="containerOfTasks">
+      <p>All tasks:</p>
+      <ul id="menu">
+        <li>lol</li>
+      </ul>
+    </div>
+    <div class="containerOfTasks">
+      <p>pending:</p>
+      <ul id="menuOfPending">
+      </ul>
+    </div>
+    <div class="containerOfTasks">
+      <p>Canceled:</p>
+      <ul id="menuOfCanceled">
+      </ul>
+    </div>
+    <div class="containerOfTasks">
+      <p>Done:</p>
+      <ul id="menuOfDone">
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="groupOf">
+    <span class="container">
+      status pending
+      <input type="button" class="P" onclick="pending()" value="pending" />
+    </span>
+    <span class="container">
+      status canceled
+      <input type="button" class="C" onclick="canceled()" value="canceled" />
+    </span>
+    <span class="container">
+      status done
+      <input type="button" class="D" onclick="done()" value="Done" />
+    </span>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
